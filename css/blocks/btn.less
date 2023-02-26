@@ -1,0 +1,27 @@
+// main: "../style.less"
+
+.button {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+    padding: .8rem 3rem;
+
+    background: linear-gradient(180deg, #00AAAA 0%, #008BAA 100%);
+    border-radius: 24px;
+    color: #fff;
+
+    transition: transform .2s linear;
+
+    &:hover {
+        /* transform: translate3d(0, 4px, 4px); */
+
+        /* padding: 1rem 3rem; */
+
+        transform: translateY(-10%);
+    }
+
+    @media @mobile-sm {
+        padding: .4rem 1.5rem;
+    }
+}

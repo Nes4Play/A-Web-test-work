@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Arial Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Arial Bold'), url('../fonts/arialbold.TTF') format('TTF');
+}
+
+@font-face {
+font-family: 'Arial Regular';
+font-style: normal;
+font-weight: 400;
+src: local('Arial Bold'), url('../fonts/arialregular.TTF') format('TTF');
+}
+
+@font-face {
+font-family: 'Arial Italic';
+font-style: italic;
+font-weight: 300;
+src: local('Arial Bold'), url('../fonts/arialItalic.TTF') format('TTF');
+}
+
+@font-face {
+    font-family: 'DM Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('DM Sans Regular'), url('../fonts/DMSans-Regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'DM Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('DM Sans Bold'), url('../fonts/DMSans-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Trebuchet MS Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Trebuchet MS Bold'), url('../fonts/trebuchetmsbold.ttf') format('ttf');
+}
+
+@font-face {
+font-family: 'Trebuchet MS Regular';
+font-style: normal;
+font-weight: 400;
+src: local('Trebuchet MS Regular'), url('../fonts/trebuchetmsregular.ttf') format('ttf');
+}

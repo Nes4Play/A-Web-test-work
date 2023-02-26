@@ -1,0 +1,61 @@
+// main: "../style.less"
+
+.header {
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background: #008BAA;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.border__header {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.625rem 0;
+    margin: 0 auto;
+
+    @media @notebook {
+        padding: 1.625rem .5rem;
+    }
+
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+
+        padding: .8rem 0;
+    }
+}
+
+.header__callback {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 1rem;
+
+    @media @tablet {
+        font-size: 24px;
+        margin-bottom: 0.5rem;
+    }
+
+    @media @mobile-sm {
+        font-size: 18px;
+    }
+}
+
+.callback__text {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    border-bottom: 1px dashed rgba(255, 255, 255, .25);
+}

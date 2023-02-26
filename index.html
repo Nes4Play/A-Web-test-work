@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Сброс стилей -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/fonts/DMSans-Bold.ttf">
+
+    <title>awebtest</title>
+</head>
+<body>
+    <!-- Sprites -->
+    <svg style="display: none;">
+        <symbol id="facebook" viewBox="0 0 32 32">
+            <path d="M16.001 0C7.16285 0 0 7.16285 0 16.001C0 24.8372 7.16285 32 16.001 32C24.8372 32 32 24.8372 32 16.001C32 7.16285 24.8372 0 16.001 0ZM22.104 8.14741L19.8918 8.14905C18.1559 8.14905 17.82 8.97403 17.82 10.1841V12.8517H21.9583L21.9567 17.0318H17.82V27.7544H13.504V17.0302H9.89639V12.8517H13.504V9.76995C13.504 6.19425 15.6892 4.24558 18.8798 4.24558L22.1057 4.25049V8.14741H22.104Z"/>
+        </symbol>
+
+        <symbol id="telegram" viewBox="0 0 50 50">
+            <path d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375	c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219	c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966	c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693	c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351	c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z"/>
+        </symbol>
+
+        <symbol id="star" viewBox="0 0 27 26">
+            <path d="M13.5 0L16.6705 9.95398L27 9.93112L18.63 16.0602L21.8435 26L13.5 19.834L5.15654 26L8.37 16.0602L0 9.93112L10.3295 9.95398L13.5 0Z" fill="#FF9900"/>
+        </symbol>
+
+        <symbol id="stargray" viewBox="0 0 27 26">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6705 9.95398L13.5 0L10.3295 9.95398L0 9.93112L8.37 16.0602L5.15654 26L13.5 19.834L21.8435 26L18.63 16.0602L27 9.93112L16.6705 9.95398ZM21.3367 11.8008L15.3683 11.814L13.5 5.94852L11.6317 11.814L5.6633 11.8008L10.4996 15.3422L8.62007 21.156L13.5 17.5496L18.3799 21.156L16.5004 15.3422L21.3367 11.8008Z" fill="#DDDDDD"/>
+        </symbol>
+
+    </svg>
+    <div class="border__header">
+        <header class="header">
+            
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="logo">
+                            <img class="logo__img" src="./img/logo-suntour.svg" alt="Logo">
+                            <div class="logo__text">Мережа турагенств <br> <span class="logo__decor">Сонце в колі</span></div>
+                        </div>
+
+                        <div class="header__callback">
+                            <a class="callback__phone" href="tel:+0441234567">044 123-45-67</a>
+                            <a class="callback__text" href="tel:+0441234567">зворотний дзвінок</a>
+                        </div>
+
+                        <div class="social header__social">
+                            <div class="social__item">
+                                <a class="social__link" href="http://facebook.com" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="social__item">
+                                <a class="social__link" href="http://telegram.org" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#telegram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div> <!-- ./header__social -->
+
+                    </div> <!-- ./header__inner -->
+                </div> <!-- ./container -->
+            
+        </header>
+    </div>
+
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__top">
+                    <div class="intro__img">
+                        <img class="intro__top-img" src="./img/hero-bg.png" alt="hero">
+                    </div>
+                    <div class="intro__top-content">
+                        <div class="intro__title">Тур <div>у Созополь,</div> Болгарія</div>
+                        <p class="intro__text">код туру</p>
+                        <div class="intro__code">3094119</div>
+                    </div>
+                </div> <!-- ./intro__top -->
+
+                <div class="intro__bottom">
+                    <div class="intro__bottom-left">
+                        <div class="hotel">
+                            <h2 class="hotel__title title">Aquamarine hotel</h2>
+                                <div class="hotel__rating-item">
+                                    <svg class="hotel__rating-icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg class="hotel__rating-icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg class="hotel__rating-icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg class="hotel__rating-icon">
+                                        <use xlink:href="#stargray"></use>
+                                    </svg>
+                                    <svg class="hotel__rating-icon">
+                                        <use xlink:href="#stargray"></use>
+                                    </svg>
+                                </div>
+                            <div class="hotel__price">$256</div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="intro__bottom-right">
+                        <div class="intro__bottom-text">
+                            <div class="intro__bottom-days">320</div>
+                        сонячних днів на рік
+                        </div>
+                    </div>
+                </div> <!-- ./intro__bottom -->
+
+                <div class="rating">
+                    <div class="rating__inner">
+                        <div class="rating__hotel">Оцінка готелю <strong>45 відгуків</strong></div>
+                        <div class="rating__average">8,4</div>
+                    </div>
+                    <div class="rating__components">
+                        <div class="rating__number">Номер <br> <strong class="rating__str">8,9</strong></div>
+                        <div class="rating__food">харчування <br> <strong class="rating__str">8,1</strong></div>
+                        <div class="rating__service">сервіс <br> <strong class="rating__str">7,9</strong></div>
+                        <div class="rating__infrastructure">інфраструктура <br> <strong class="rating__str">8,9</strong></div>
+                    </div>
+                </div>
+
+            </div> <!-- ./intro__inner -->
+        </div> <!-- ./container -->
+    </div> <!-- ./intro -->
+
+    <section class="section">
+        <div class="tours">
+            <div class="container">
+                <div class="tours__inner">
+                    <div class="tour">
+                        
+                        <img class="tour__img" src="./img/tour/road.png" alt="Шовковий шлях">
+                        
+                        <div class="tour__content">
+                            <div class="info__tour">
+                                <h3 id="another" class="title">Шовковий шлях</h3>
+                                <p class="text">Екстремальний маршрут</p>
+                            </div>
+                            <div class="prices">
+                                <p class="price--currently">$158</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour">
+
+                        <img class="tour__img" src="./img/tour/jumping.png" alt="Роупджампінг">
+
+                        <div class="tour__content">
+                            <div class="info__tour">
+                                <h3 id="another" class="title">Роупджампінг</h3>
+                                <p class="text">Не дай Боже не любиш</p>
+                            </div>
+                            <div class="prices">
+                                <p class="price--currently">$57</p>
+                                <p class="price__old">$90</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- ./ tours__inner -->
+
+                <div class="promo">
+                    <div class="promo__inner">
+                        <div class="promo__sell">$75 ЗНИЖКА</div>
+                        <div class="promo__inner-content">
+                            <div class="promo__title">промокод</div>
+                            <div class="promo__text">Знижка $75 готівкою при проживанні від 10 ночей</div>
+                            <div class="promo__subtext">29 користувачів використали промокод</div>
+                        </div>
+                        <a class="button" href="#">Отримати знижку</a>
+                    </div>
+                    <a class="promo__more" href="#">Дивіться подробиці <img src="./img/vector.svg" alt=""></a>
+                </div> <!-- ./promo -->
+
+            </div> <!-- ./container -->
+        </div> <!-- ./tours -->
+    </section>
+
+    <section class="section__info">
+        <div class="info">
+            <div class="container">
+                <div class="info__inner">
+                    <div class="info__inner-left">
+                        <div class="info__inner-left__text">
+                            <div class="info__first-block">
+                                <h2>36,6 градусів за Цельсієм і пізна- вальна фізика</h2>
+                                <b>Ніхто не замислювався чому температура людського тіла 36,6 С? Чому не інша? Чому не дорівнює денній температурі навколишнього простору, наприклад? Але чому так сталося? Перша причина лежить від нас на часовій осі в минулому на відстані в кілька мільярдів років. Саме тоді з'явилося життя.</b>
+                                <p>Грубо кажучи, первинні реплікатори обгородилися захисною оболонкою від решти океану - створивши клітини. Клітини це замкнуті водні резервуари, в яких вся життєдіяльність проходить у водному середовищі. І всі сухопутні організми концептуально це машини виживання реплікаторів, мобільне (у випадку з тваринами), сприятливе водне середовище для репродукції, оточене захисною оболонкою від зовнішнього світу.</p>
+                            </div>
+                            <div class="info__second-block">
+                                <h3>Шукаємо відповідь</h3>
+                                <p>Що цікаво, всі теплокровні функціонують у межах тієї самої області температур, що й людина. Наприклад температура у коней 37,5-38,5; у корів 37,5-39,5; курей 40,5-42,5; свиней 39,0-40,0; кішок 38,0-39,5; мавп 38,1; голубів 41,0-44,0. Відповідь лежить у царині ні, не біології. А в галузі фізики води. Річ у тім, що теплоємність води нелінійно залежить від температури. Теплоємність - це кількість енергії, яку необхідно витратити для того, щоб нагріти 1 кг речовини на 1 градус. При збільшенні температури вона ніби пікірує, як штурмовик, і підноситься вгору після проходження нижньої точки в 36,8 градусів Цельсія. В організмі людини вода становить близько 65-70%, її теплоємність величезна.</p>
+                                    
+                                    <div class="info__inner-right right__content">
+                                        <div class="right__num">0,71</div>
+                                        <div>
+                                            <div class="right__title">WHR здорової людини </div>
+                                            <div class="right__subtitle">Один із вельми надійних показників здоров'я, фертильності, якраз «waistto hip ratio».</div>
+                                        </div>
+                                    </div>
+                                    
+                                <p class="line">Річ у тім, що теплоємність води нелінійно залежить від температури. Теплоємність — це кількість енергії, яку необхідно витратити для того, щоб нагріти 1 кг речовини на 1 градус. При збільшенні температури вона ніби пікірує, як штурмовик, і підноситься вгору після проходження нижньої точки в 36,8 градусів Цельсія. В організмі людини вода становить близько 65-70%, її теплоємність величезна.</p>
+                                <p>90% енергії, одержуваної з їжею, теплокровні тому витрачають лише на підтримання постійної температури внутрішнього середовища. На нагрівання води. Тому ця ямка, мінімум, в якому потрібно було витрачати мінімальну кількість енергії на підтримання свого стану, як атрактор, стягував на себе протягом еволюції всі "моделі" теплокровних. Фенотипи, з робочою температурою інших діапазонів, були занадто "ненажерливими" і відсіювалися відбором.</p>
+                            </div>
+                            
+                            <div class="info__third-block">
+                                <h3>Хлорофилл и красота</h3>
+                                <p>Могло статися так, що небо було б отруйно-жовте, а не блакитне. Трава так само червона. Подобався б нам такий пейзаж? Чому червоний, яскраво-жовтий, створюють відчуття неспокою і не підходять для ідилічних райських картин ландшафтів як блакитний і зелений? Справа не в них, а в нас. Ми продукт еволюції, продукт середовища, в якому ми розвивалися. Що і було показано на прикладі температури тіла.</p>
+                            </div>
+
+                            <div class="tablet">
+                                <div class="tablet__options">
+                                    <div class="name">Ім'я</div>
+                                    <div class="total">Сума</div>
+                                    <div class="amount">Виплата</div>
+                                    <div class="payment">Вид оплати</div>
+                                </div>
+
+                                <div class="tablet__client-one">
+                                    <div class="name">Сергій</div>
+                                    <div class="total">2459$</div>
+                                    <div class="amount">375$</div>
+                                    <div class="payment">Card Payment</div>
+                                </div>
+
+                                <div class="tablet__client-two">
+                                    <div class="name">Микола</div>
+                                    <div class="total">1569$</div>
+                                    <div class="amount">582$</div>
+                                    <div class="payment">Card Payment</div>
+                                </div>
+
+                                <div class="tablet__client-three">
+                                    <div class="name">Наталія</div>
+                                    <div class="total">1759$</div>
+                                    <div class="amount">965$</div>
+                                    <div class="payment">Card Payment</div>
+                                </div>
+                            </div>
+
+                            <div class="find__info">
+                                <h4>Як знайти ці консервативні ознаки? Найчастіше розглядають 5 джерел інформації про них:</h4>
+                                <ul>
+                                    <li>ембріологічні дослідження;</li>
+                                    <li>тератологічні дані;</li>
+                                    <li>порівняльно-морфологічні дані;</li>
+                                    <li>аналіз вроджених поведінкових програм (етологічні дані);</li>
+                                    <li>вивчення взаємозв'язку з іншими видами.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info__inner-right">
+                        <div class="right__num">0,71</div>
+                        <div>
+                            <div class="right__title">WHR здорової людини </div>
+                            <div class="right__subtitle">Один із вельми надійних показників здоров'я, фертильності, якраз «waistto hip ratio».</div>
+                        </div>
+                    </div>
+
+                </div> <!-- ./info__inner -->
+            </div> <!-- ./container -->
+        </div> <!-- ./info -->
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__text">2023 Тестове завдання на вакансію верстальника в компанію <a href="#">Aweb</a></div>
+            
+                <div class="social">
+                    <div class="social__item">
+                            <a class="social__link" href="http://facebook.com" target="_blank">
+                                <svg class="social__icon social__icon--fb">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a class="social__link" href="http://telegram.org" target="_blank">
+                                <svg class="social__icon social__icon--tg">
+                                    <use xlink:href="#telegram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div> <!-- ./container -->
+    </footer> <!-- ./footer -->
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

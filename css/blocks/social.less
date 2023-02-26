@@ -1,0 +1,34 @@
+// main: "../style.less"
+
+.social {
+    display: flex;
+}
+
+.social__item {
+    margin-right: 1rem;
+
+    @media @tablet {
+        margin-right: .5rem;
+    }
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.social__icon {
+    width: 32px;
+    height: 32px;
+    fill: #fff;
+
+    &--fb {
+        fill: #4867AA;
+    }
+
+    &--tg {
+        fill: #2AABEE;
+    }
+}
